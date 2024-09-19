@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <div className={styles.recommend} onClick={() => navigate('/recommend')}>
         <img
-          src="src/assets/istockphoto-831651876-612x612.jpg"
+          src="src/assets/home.png"
           alt="Recommended"
           className={styles.recommendImage}
         />
