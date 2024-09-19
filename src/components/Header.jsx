@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '../css/header.module.css'; 
+import logoImage from '../assets/images (1).jpeg'; // Import the image
 
 function Header({ query, setQuery, handleSearch }) {
   const navigate = useNavigate();
@@ -39,7 +40,7 @@ function Header({ query, setQuery, handleSearch }) {
       <header className={styles.header}>
         <div className={styles.headerLeft}>
           <div className={styles.logoContainer}>
-            <img src="src/assets/images (1).jpeg" alt="Library Logo" className={styles.logoImage} />
+            <img src={logoImage} alt="Library Logo" className={styles.logoImage} /> {/* Use the imported image */}
           </div>
         </div>
         <div className={styles.headerRight}>
